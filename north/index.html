@@ -8,22 +8,44 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
   <title>Goa Tourism</title>
 </head>
 
 <body>
   <!-- Header and Nav -->
-  <header>
+  <header class="north-goa">
     <nav>
       <div class="main">
         
         <ul class="main-list">
-          <li class="active main-list-item"><a href="index.html">Home</a></li>
-          <li class="main-list-item"><a href="famousplaces.html">Famous Places</a></li>
-          <li class="main-list-item"><a href="restaurants.html">Restaurants</a></li>
-          <li class="main-list-item"><a href="stops.html">Bus Stops</a></li>
-          <li class="main-list-item"><a href="hospitals.html">Hospitals</a></li>
+          <div class="dropdown">
+            <button onclick="myFunction1()" class="dropbtn">Attractions</button>
+            <div id="myDropdown1" class="dropdown-content">
+              <a href="famousplaces.html">Famous Places</a>
+              <a href="restaurants.html">Restaurants</a>
+              <a href="hotels.html">Bus Stops</a>
+              <a href="hospitals.html">Hotels</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn">Public Amenities</button>
+            <div id="myDropdown2" class="dropdown-content">
+              <a href="stops.html">Bus Stops</a>
+              <a href="hospitals.html">Hospitals</a>
+              <a href="stations.html">Police Stations</a>      
+            </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="myFunction3()" class="dropbtn">Travel</button>
+            <div id="myDropdown3" class="dropdown-content">
+              <a href="bus.html">Bus</a>
+              <a href="taxi.html">Taxi</a>
+              
+            </div>
+          </div>
+          
+          
         </ul>
       </div>
     </nav>
@@ -99,19 +121,19 @@
             <!-- Image Gallery -->
             <div class="row">
               <div class="column">
-                <img src="images/halawork.jpg">
+                <img src="../images/halawork.jpg">
 
               </div>
               <div class="column">
-                <img src="images/halawork2.jpg">
+                <img src="../images/halawork2.jpg">
 
 
               </div>
               <div class="column">
-                <img src="images/halawork3.jpg">
+                <img src="../images/halawork3.jpg">
               </div>
               <div class="column">
-                <img src="images/halawork4.jpg">
+                <img src="../images/halawork4.jpg">
 
               </div>
 
@@ -171,6 +193,8 @@
   </div>
 </footer>
 <!-- // Footer -->
+
+<script src="index.js"></script>
 </body>
 
 </html>
